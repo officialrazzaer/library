@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* making the header  */
+
+header {
+  background-color: #f5f5f5; /* Light color background */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin-left: 2%;
+}
+
+h1 {
+  margin: 0;
+  color: #333; /* Text color */
+}
+
+p {
+  margin: 0;
+  padding-top: 5px;
+  color: #666; /* Text color */
+}
+
+.counter {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  color: #333;
+  display: flex;
+  margin-right: 5%;
+  align-items: center;
+}
+
+/* making the body  */
+.grid {
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 90vh;
+}
+
+.enter-contents {
+  background-color: rgb(90, 143, 125);
+  padding: 20px;
+  color: white; /* Set the text color to white for better visibility */
+}
+
+.enter-contents h2 {
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+
+.book-info {
+  background-color: lightblue;
+  padding: 20px;
+  color: white; /* Set the text color to white for better visibility */
+}
+
+/* Additional styles for the form inputs and placeholders */
+.input-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-block input {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  color: black;
+}
+
+/* Additional styles for validation messages */
+.validation-text {
+  display: none;
+  color: red;
+}
+
+/* Additional styles for the checkbox label */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-input {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.checkbox-input input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  font-weight: bold;
+}
+
+/* Additional styles for the 'ADD A NEW BOOK' button */
+input[type="submit"] {
+  background-color: white;
+  color: rgb(90, 143, 125);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* main grid with information styling for table  */
+.book-info {
+  background-color: #f5f5f5;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+}
+
+/* Additional styles for the table */
+#books-list {
+  width: 100%;
+  max-width: 800px; /* Adjust this value to set the maximum width of the table */
+  border-collapse: collapse;
+}
+
+#book-requirements {
+  background-color: rgb(90, 143, 125);
+  color: white;
+}
+
+#book-requirements td {
+  padding: 10px 20px;
+  padding: 40px;
+  font-size: 1.5em;
+}
+
+tbody td {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Optional: Add hover effect for rows */
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Optional: Style the removal column */
+#table-body td:last-child {
+  text-align: center;
+}
+
+/* Optional: Style the removal button */
+.remove-btn {
+  color: red;
+  cursor: pointer;
+}

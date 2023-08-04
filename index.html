@@ -3,10 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Book Library</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <div class="title">
+        <h1>A Simple Library</h1>
+        <p>Store books you have read!</p>
+      </div>
+      <div class="counter">Books Read: 0</div>
+    </header>
+    <main>
+      <div class="grid">
+        <div class="enter-contents">
+          <h2>Enter Book info</h2>
+          <form>
+            <div class="input-block">
+              <input
+                type="text"
+                id="title"
+                name="title"
+                autocomplete="off"
+                required
+              /><label class="placeholder" for="title"
+                >what is the title of this book?</label
+              >
+              <div class="validation-block">
+                <p class="validation-text title">Please fill out this field</p>
+              </div>
+            </div>
+            <div class="input-block">
+              <input
+                type="text"
+                id="author"
+                name="author"
+                autocomplete="off"
+                required
+              /><label class="placeholder" for="author"
+                >Who is the author of this book?</label
+              >
+              <div class="validation-block">
+                <p class="validation-text author">Please fill out this field</p>
+              </div>
+            </div>
+            <div class="input-block">
+              <input
+                type="number"
+                id="pages"
+                name="pages"
+                autocomplete="off"
+                required
+                min="1"
+              /><label for="pages" class="placeholder"
+                >how many pages are in this book?</label
+              >
+              <div class="validation-text">
+                Please enter a number greater than 0
+              </div>
+            </div>
+            <label class="checkbox">
+              <input type="checkbox" name="readStatus" autocomplete="off" />
+              <span class="checkbox-label">I have already read this book!</span>
+            </label>
+            <input type="submit" value="ADD A NEW BOOK" id="add-book" />
+          </form>
+        </div>
+        <div class="book-info">
+          <table id="books-list">
+            <thead id="book-requirements">
+              <tr>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Pages</td>
+                <td>Status</td>
+                <td>Removal</td>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
